@@ -1,0 +1,63 @@
+{
+    "version": 2,
+      "framework": null,
+    "functions": {
+        "api/index.php": { "runtime": "vercel-php@0.3.1" }
+    },
+    "routes": [{
+        "src": "/(.*)",
+        "dest": "/api/index.php"
+    }],
+    "env": {
+        "APP_ENV": "production",
+        "APP_DEBUG": "true",
+        "APP_URL": "https://yourproductionurl.com",
+
+        "APP_CONFIG_CACHE": "/tmp/config.php",
+        "APP_EVENTS_CACHE": "/tmp/events.php",
+        "APP_PACKAGES_CACHE": "/tmp/packages.php",
+        "APP_ROUTES_CACHE": "/tmp/routes.php",
+        "APP_SERVICES_CACHE": "/tmp/services.php",
+        "VIEW_COMPILED_PATH": "/tmp",
+
+        "CACHE_DRIVER": "array",
+        "LOG_CHANNEL": "stderr",
+        "SESSION_DRIVER": "cookie",
+
+"APP_NAME": "Laravel",
+"APP_KEY": "base64:t8/PrIYRtbG5NV0APn67kuKaGuv5hnki26THZGl7XL0=",
+"APP_TIMEZONE": "UTC",
+
+"APP_LOCALE": "en",
+"APP_FALLBACK_LOCALE": "en",
+"APP_FAKER_LOCALE": "en_US",
+
+"APP_MAINTENANCE_DRIVER": "file",
+"APP_MAINTENANCE_STORE": "database",
+
+"BCRYPT_ROUNDS": "12",
+
+"LOG_STACK": "single",
+"LOG_DEPRECATIONS_CHANNEL": "null",
+"LOG_LEVEL": "debug",
+
+"DB_CONNECTION": "sqlite",
+
+"SESSION_LIFETIME": "120",
+"SESSION_ENCRYPT": "false",
+"SESSION_PATH": "/",
+"SESSION_DOMAIN": "null",
+
+"BROADCAST_CONNECTION": "log",
+"FILESYSTEM_DISK": "local",
+"QUEUE_CONNECTION": "database",
+
+"CACHE_STORE": "database",
+"CACHE_PREFIX": "",
+
+"MEMCACHED_HOST": "127.0.0.1",
+
+"VITE_APP_NAME": "${APP_NAME}"
+
+    }
+}
